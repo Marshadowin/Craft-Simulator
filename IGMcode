@@ -74,20 +74,20 @@ Buttons
 		tag:2ndrow
 		class:brown
 	*stone
-		name:Stones
 		text:Stone:[rstone]
+		name:Stones
 		desc:<b>Get</b>:Explore Forrest|Explore Cave
 		tag:2ndrow
 		class:lightgrey
 	*ironore
-		name:IronOre
 		text:Ironore:[rironore]
+		name:IronOre
 		desc:<b>Get</b>:Explore Cave
 		tag:2ndrow
 //Crafting##################################################################################################################
 	*plank
-		name:Planks
 		text:Plank:[rplank]
+		name:Planks
 		desc:<b>Craft:</b>2 Logs
 		on click:
 			if (rlog>=2)
