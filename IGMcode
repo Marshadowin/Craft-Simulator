@@ -139,7 +139,7 @@ Buttons
 				lose 5 rstone
 				yield 1 rstonepickaxe
 			end
-		end
+//		end
 		tag:4throw
 		class:grey
 Resources
