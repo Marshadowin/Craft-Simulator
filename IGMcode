@@ -117,7 +117,19 @@ Buttons
 		end
 		tag:4throw
 		class:grey
-	*stonepickaxe
+	*furnace
+		text:Furnace:[rfurnace]
+		name:Furnace
+		desc:<b>Craft:</b>10 stones</>Allows the smeltin of ores.</><b>10% Chance to break upon use.</b>
+		on click:
+			if 10rstone>=10)
+				lose 10 rstone
+				yield 1 rfurnace
+			end
+		end
+		tag:4throw
+		class:grey
+			*stonepickaxe
 		text:Stone Pickaxe:[rstonepickaxe]
 		name:Stone Pickaxe
 		desc:<b>Craft:</b>3 plank and 5 stones</>Allows exploration of the mines.</><b>5% Chance to break upon use.</b>
