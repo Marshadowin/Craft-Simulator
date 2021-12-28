@@ -57,11 +57,11 @@ Buttons
 		on click:
 			if (rstonepickaxe>=1)
 				if (chance(50%))
-				yield 1 rstone
-			end
-			if (rstonepickaxe>=1)
+					yield 1 rstone
+				end
 				if (chance(10%))
-				yield 1 rironore
+					yield 1 rironore
+				end
 			end
 		end
 		tag:1strow
