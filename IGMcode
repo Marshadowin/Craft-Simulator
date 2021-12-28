@@ -68,8 +68,6 @@ Buttons
 			if (chance(5%) and rstonepickaxe>=1)
 				lose 1 rstonepickaxe
 				end
-			end
-		end
 		tag:1strow
 		class:explore grey
 //Basic########################################################################################################################################################
