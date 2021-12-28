@@ -38,7 +38,7 @@ Buttons
 //Exploring#################################################################################################################
 	*exploreforrest
 		name:Explore Forest
-		desc:<b>Log:</b>[?(rstoneaxe>=1)|20%|10%]</><b>Stones</b>10%
+		desc:<b>Log:</b>[?(rstoneaxe>=1)|10%|20%]</><b>Stones</b>10%
 		on click:
 			if (rstoneaxe>=1 and chance(20%))
 				yield 1 rlog
