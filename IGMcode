@@ -117,6 +117,19 @@ Buttons
 		end
 		tag:4throw
 		class:grey
+	*stonepickaxe
+		text:Stone Pickaxe:[rstonepickaxe]
+		name:Stone Pickaxe
+		desc:<b>Craft:</b>3 plank and 5 stones</>Allows exploration of the mines.</><b>5% Chance to break upon use.</b>
+		on click:
+			if (rplank>=3 and rstone>=5)
+				lose 3 rplank
+				lose 5 rstone
+				yield 1 rstonepickaxe
+			end
+		end
+		tag:4throw
+		class:grey
 Resources
 	*riron
 	*rlog
