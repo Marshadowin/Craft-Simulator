@@ -1,1 +1,129 @@
-
+Let's make a game!
+name:Craft Sim
+by:GameStuff
+desc:Very first version
+version:1
+ 
+CSS
+	.explore{
+		font-size:15px;
+		height:35px;}
+	.lightgreen{
+		background:lightgreen;}
+	.lightgrey{
+		background:lightgrey;}
+	.brown{
+		background:brown;}
+	.tan{
+		background:tan;}
+	.grey{
+		background:grey;}
+	.lightgrey{
+		background:lightgrey;}
+ 
+Layout
+	*row1
+		header:Explore
+		contains:tag:1strow
+	*row2
+		header:Resources
+		contains:tag:2ndrow
+	*row3
+		header:Crafting
+		contains:tag:3rdrow
+	*row4
+		header:Tools
+		contains:tag:4throw
+Buttons
+//Exploring#################################################################################################################
+	*exploreforrest
+		name:Explore Forest
+		desc:<b>Log:</b>[?rstoneaxe>=1|10%|20%]</><b>Stones</b>10%
+		on click:
+			if (rstoneaxe>=1 and chance(20%))
+				yield 1 rlog
+			else if (chance(10%))
+				yield 1 rlog
+			end
+			if (chance(10%))
+				yield 1 rstone
+			if (chance(5%) and rstoneaxe>=1)
+				lose 1 rstoneaxe
+				end
+			end
+		end
+		tag:1strow
+		class:explore lightgreen
+	*explorecave
+		name:Explore Cave
+		desc:<b>Stones:</b>50%</><b>Ironore:</b>10%
+		on click:
+			if (rstonepickaxe>=1)
+				if (chance(50%))
+					yield 1 rstone
+			end
+			if (chance(10%))
+				yield 1 rironore
+			end
+			if (chance(5%) and rstonepickaxe>=1)
+				lose 1 rstonepickaxe
+			end
+		end
+	end
+		tag:1strow
+		class:explore grey
+//Basic########################################################################################################################################################
+	*log
+		text:Log:[rlog]
+		name:Logs
+		desc:<b>Get</b>:Explore Forrest
+		tag:2ndrow
+		class:brown
+	*stone
+		text:Stone:[rstone]
+		name:Stones
+		desc:<b>Get</b>:Explore Forrest|Explore Cave
+		tag:2ndrow
+		class:lightgrey
+	*ironore
+		text:Ironore:[rironore]
+		name:IronOre
+		desc:<b>Get</b>:Explore Cave
+		tag:2ndrow
+//Crafting##################################################################################################################
+	*plank
+		text:Plank:[rplank]
+		name:Planks
+		desc:<b>Craft:</b>2 Logs
+		on click:
+			if (rlog>=2)
+				yield 1 rplank
+				lose 2 rlog
+			end
+		end
+		tag:3rdrow
+		class:tan
+//Tools#####################################################################################################################
+	*stoneaxe
+		text:Stone Axe:[rstoneaxe]
+		name:Stone Axe
+		desc:<b>Craft:</b>3 plank and 3 stones</>Doubles Wood gain</><b>5% Chance to break upon use.</b>
+		on click:
+			if (rplank>=3 and rstone>=3)
+				lose 3 rplank
+				lose 3 rstone
+				yield 1 rstoneaxe
+			end
+		end
+		tag:4throw
+		class:grey
+Resources
+	*riron
+	*rlog
+	*rplank
+	*rstone|rstones
+	*rironore
+	*rstonepickaxe
+	*rfurnace
+	*rstoneaxe
+Buildings
