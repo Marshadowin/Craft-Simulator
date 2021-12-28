@@ -50,7 +50,7 @@ Buttons
 			if (chance(5%) and rstoneaxe>=1)
 				lose 1 rstoneaxe
 				end
-			end
+//			end
 //		end
 		tag:1strow
 		class:explore lightgreen
@@ -67,9 +67,9 @@ Buttons
 			end
 			if (chance(5%) and rstonepickaxe>=1)
 				lose 1 rstonepickaxe
-			end
-		end
-//	end
+				end
+//			end
+//		end
 		tag:1strow
 		class:explore grey
 //Basic########################################################################################################################################################
@@ -99,8 +99,8 @@ Buttons
 			if (rlog>=2)
 				yield 1 rplank
 				lose 2 rlog
-			end
-//		end
+				end
+//			end
 		tag:3rdrow
 		class:tan
 //Tools#####################################################################################################################
@@ -113,8 +113,8 @@ Buttons
 				lose 3 rplank
 				lose 3 rstone
 				yield 1 rstoneaxe
-			end
-//		end
+				end
+//			end
 		tag:4throw
 		class:grey
 	*furnace
@@ -125,8 +125,7 @@ Buttons
 			if (rstone>=10)
 				lose 10 rstone
 				yield 1 rfurnace
-			end
-//		end
+				end
 		tag:4throw
 		class:grey
 			*stonepickaxe
@@ -138,8 +137,7 @@ Buttons
 				lose 3 rplank
 				lose 5 rstone
 				yield 1 rstonepickaxe
-			end
-//		end
+				end
 		tag:4throw
 		class:grey
 Resources
