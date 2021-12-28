@@ -50,7 +50,7 @@ Buttons
 			if (chance(5%) and rstoneaxe>=1)
 				lose 1 rstoneaxe
 				end
-//			end
+			end
 //		end
 		tag:1strow
 		class:explore lightgreen
