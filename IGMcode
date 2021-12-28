@@ -51,7 +51,7 @@ Buttons
 				lose 1 rstoneaxe
 				end
 			end
-		end
+//		end
 		tag:1strow
 		class:explore lightgreen
 	*explorecave
