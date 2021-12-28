@@ -2,7 +2,7 @@ Let's make a game!
 name:Craft Sim
 by:GameStuff
 desc:Test boi
-version:0
+version:1
  
 CSS
 	.explore{
