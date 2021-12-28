@@ -114,7 +114,7 @@ Buttons
 				lose 3 rstone
 				yield 1 rstoneaxe
 			end
-		end
+//		end
 		tag:4throw
 		class:grey
 	*furnace
@@ -126,7 +126,7 @@ Buttons
 				lose 10 rstone
 				yield 1 rfurnace
 			end
-		end
+//		end
 		tag:4throw
 		class:grey
 			*stonepickaxe
