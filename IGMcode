@@ -69,20 +69,24 @@ Buttons
 //Basic#####################################################################################################################
 	*log
 		text:Log:[rlog]
+		name:Logs
 		desc:<b>Get</b>:Explore Forrest
 		tag:2ndrow
 		class:brown
 	*stone
+		name:Stones
 		text:Stone:[rstone]
 		desc:<b>Get</b>:Explore Forrest|Explore Cave
 		tag:2ndrow
 		class:lightgrey
 	*ironore
+		name:IronOre
 		text:Ironore:[rironore]
 		desc:<b>Get</b>:Explore Cave
 		tag:2ndrow
 //Crafting##################################################################################################################
 	*plank
+		name:Planks
 		text:Plank:[rplank]
 		desc:<b>Craft:</b>2 Logs
 		on click:
