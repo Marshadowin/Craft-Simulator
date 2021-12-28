@@ -44,11 +44,14 @@ Buttons
 				yield 1 rlog
 			else if (chance(10%))
 				yield 1 rlog
-				end
+			end
 			if (chance(10%))
 				yield 1 rstone
+			if (chance(5%) and rstoneaxe>=1)
+				lose 1 rstoneaxe
 				end
 			end
+		end
 		tag:1strow
 		class:explore lightgreen
 	*explorecave
@@ -58,15 +61,18 @@ Buttons
 			if (rstonepickaxe>=1)
 				if (chance(50%))
 					yield 1 rstone
-				end
-				if (chance(10%))
-					yield 1 rironore
-				end
+			end
+			if (chance(10%))
+				yield 1 rironore
+			end
+			if (chance(5%) and rstonepickaxe>=1)
+				lose 1 rstonepickaxe
 			end
 		end
+	end
 		tag:1strow
 		class:explore grey
-//Basic#####################################################################################################################
+//Basic########################################################################################################################################################
 	*log
 		text:Log:[rlog]
 		name:Logs
@@ -93,22 +99,22 @@ Buttons
 			if (rlog>=2)
 				yield 1 rplank
 				lose 2 rlog
-end
-end
+			end
+		end
 		tag:3rdrow
 		class:tan
 //Tools#####################################################################################################################
 	*stoneaxe
 		text:Stone Axe:[rstoneaxe]
 		name:Stone Axe
-		desc:<b>Craft:</b>3 plank and 3 stones</>Doubles Wood gain.
+		desc:<b>Craft:</b>3 plank and 3 stones</>Doubles Wood gain</><b>5% Chance to break upon use.</b>
 		on click:
 			if (rplank>=3 and rstone>=3)
 				lose 3 rplank
 				lose 3 rstone
 				yield 1 rstoneaxe
-end
-end
+			end
+		end
 		tag:4throw
 		class:grey
 Resources
