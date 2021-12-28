@@ -100,7 +100,6 @@ Buttons
 				yield 1 rplank
 				lose 2 rlog
 				end
-			end
 		tag:3rdrow
 		class:tan
 //Tools#####################################################################################################################
@@ -114,7 +113,6 @@ Buttons
 				lose 3 rstone
 				yield 1 rstoneaxe
 				end
-			end
 		tag:4throw
 		class:grey
 	*furnace
