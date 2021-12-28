@@ -122,10 +122,11 @@ Buttons
 		name:Furnace
 		desc:<b>Craft:</b>10 stones</>Allows the smeltin of ores.</><b>10% Chance to break upon use.</b>
 		on click:
-			if 10rstone>=10)
+			if (10rstone>=10)
 				lose 10 rstone
 				yield 1 rfurnace
 			end
+		end
 		tag:4throw
 		class:grey
 			*stonepickaxe
