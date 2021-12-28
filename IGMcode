@@ -96,6 +96,7 @@ end
 //Tools#####################################################################################################################
 	*stoneaxe
 		text:Stone Axe:[rstoneaxe]
+		name:Stone Axe
 		desc:<b>Craft:</b>3 plank and 3 stones</>Doubles Wood gain.
 		on click:
 			if (rplank>=3 and rstone>=3)
