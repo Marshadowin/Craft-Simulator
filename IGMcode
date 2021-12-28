@@ -51,7 +51,7 @@ Buttons
 				lose 1 rstoneaxe
 				end
 			end
-//		end
+		end
 		tag:1strow
 		class:explore lightgreen
 	*explorecave
@@ -68,8 +68,8 @@ Buttons
 			if (chance(5%) and rstonepickaxe>=1)
 				lose 1 rstonepickaxe
 				end
-//			end
-//		end
+			end
+		end
 		tag:1strow
 		class:explore grey
 //Basic########################################################################################################################################################
@@ -100,7 +100,7 @@ Buttons
 				yield 1 rplank
 				lose 2 rlog
 				end
-//			end
+			end
 		tag:3rdrow
 		class:tan
 //Tools#####################################################################################################################
@@ -114,7 +114,7 @@ Buttons
 				lose 3 rstone
 				yield 1 rstoneaxe
 				end
-//			end
+			end
 		tag:4throw
 		class:grey
 	*furnace
